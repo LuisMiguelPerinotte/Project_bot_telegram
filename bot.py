@@ -32,7 +32,8 @@ async def chat_ia(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_input = update.message.text
     if user_input.lower() in ["sair", "quit", "exit"]:
         print("você escolheu sair!")
-        
+        return
+    
     data = {
         "model": "mistralai/mistral-7b-instruct",
         "messages": [
