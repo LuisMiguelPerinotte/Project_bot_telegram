@@ -19,7 +19,7 @@ def inicio_bot():
     
     
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Olá! Eu sou o Bot Lm 😎")
+    await update.message.reply_text("Olá! Eu sou o Lm Bot😎")
     
 
 async def chat_ia(update: Update, context: ContextTypes.DEFAULT_TYPE):
