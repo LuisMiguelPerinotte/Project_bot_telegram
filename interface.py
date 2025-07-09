@@ -8,7 +8,7 @@ def inicio_interface():
     label = tk.Label(janela, text="BOT EM EXECUÇÃO..." )
     label.pack(pady=20)
 
-    botão_sair = tk.Button(janela, text="Fechar", command=janela.destroy)
+    botão_sair = tk.Button(janela, text="Parar Bot", command=janela.destroy)
     botão_sair.pack(pady=10)
     
     janela.mainloop()

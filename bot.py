@@ -16,6 +16,6 @@ def inicio_bot():
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, chat_ia))
 
     app.run_polling()
-    
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Olá! Eu sou o Lm Bot😎") 
