@@ -1,13 +1,9 @@
-from bot import inicio_bot
+import threading
 
-print("""
- _      __  __   ____   ____ _______ 
-| |    |  \/  | |  _ \ / __ \__   __|
-| |    | \  / | | |_) | |  | | | |   
-| |    | |\/| | |  _  | |  | | | |   
-| |____| |  | | | |_) | |__| | | |   
-|______|_|  |_| |____/ \____/  |_|   
-                                      """)
-    
-if __name__  == "__main__":
-    inicio_bot()
+from bot import inicio_bot
+from interface import inicio_interface
+
+thread_bot = threading.Thread(target=inicio_interface)
+thread_bot.start()
+
+inicio_bot()
